@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba1 100%);
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.module {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.module:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.module-title {
+    color: #4a5568;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.video-list {
+    list-style: none;
+}
+
+.video-list li {
+    margin-bottom: 0.8rem;
+    padding: 0.8rem 1rem;
+    background-color: #edf2f7;
+    border-left: 4px solid #667eea;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.video-list li:hover {
+    background-color: #e2e8f0;
+}
+
+.video-list a {
+    text-decoration: none;
+    color: #2b6cb0;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    display: block;
+}
+
+.video-list a:hover {
+    color: #667eea;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+    
+    .module {
+        padding: 1rem;
+    }
+    
+    .module-title {
+        font-size: 1.5rem;
+    }
+    
+    .video-list li {
+        padding: 0.6rem 0.8rem;
+        font-size: 0.95rem;
+    }
+}
